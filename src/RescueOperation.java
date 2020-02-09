@@ -19,7 +19,7 @@ public class RescueOperation {
         gun.shot();
         gun.shot();
 
-        //Подошел зомби  и стреляем по нему
+        //На звук банок подошел зомби
         gun.zombieShot();
 
         //Отец хотел зарядить тебе пушку, но рассыпал патроны
@@ -39,7 +39,7 @@ public class RescueOperation {
         System.out.println(pistol.getStatisticMyGun());
         System.out.println(shotgun.getStatisticMyGun());
 
-        //Привлекаем зомби
+        //Тактически привлекаем зомби банками
         pistol.bankShot();
         pistol.bankShot();
         pistol.bankShot();
@@ -56,7 +56,9 @@ public class RescueOperation {
         shotgun.zombieShot();
         shotgun.zombieShot();
         shotgun.zombieShot();
+        //Босс упал теперь можно добить
         shotgun.zombieShot();
+        //Черт, кончились патроны, перезаряжаем пистолет
         pistol.reload();
         //Контрольный в голову
         pistol.zombieShot();
